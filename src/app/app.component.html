@@ -1,13 +1,26 @@
 <div class="container">
   <nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <li>
-        <a routerLinkActive="active" routerLink="list">List</a>
-      </li>
-      <li>
-        <a routerLinkActive="active" routerLink="create">Create</a>
-      </li>
-    </ul>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a routerLinkActive="active" routerLink="list">List</a>
+        </li>
+        <li>
+          <a routerLinkActive="active" routerLink="create">Create</a>
+        </li>
+        <li>
+          <a routerLinkActive="active" routerLink="department">Department</a>
+        </li>
+      </ul>
+    </div> 
+    
   </nav>
   <router-outlet></router-outlet>
 </div>
